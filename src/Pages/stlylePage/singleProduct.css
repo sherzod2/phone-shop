@@ -1,0 +1,130 @@
+.product-appearance__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #838383;
+  margin-bottom: 20px;
+}
+
+.product-appearance__body {
+  position: relative;
+  padding: 50px 68px 27px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin-bottom: 23px;
+}
+
+.product-appearance__isselected {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+}
+
+.product-appearance__fotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-appearance__foto {
+  margin: 17px 11px;
+}
+
+.product-appearance__text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.product-appearance__name {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #1c1c27;
+}
+
+.product-appearance__price {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 21px;
+  color: #ffa542;
+  margin-bottom: 12px;
+}
+
+.product-appearance__del-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  text-decoration-line: line-through;
+  color: #ffce7f;
+}
+
+/*  CHARACTER */
+
+.features__body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.features__left {
+  min-width: 824px;
+}
+
+.features__left-top {
+  position: relative;
+  padding: 20px 0 21px 23px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.features__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c27;
+}
+
+.features__left-bottom {
+  padding: 58px 0 24px 23px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-top: -38px;
+  width: 100%;
+}
+
+.features__right {
+  width: 254px;
+}
+
+.features__right-buy {
+  padding: 13px 0;
+  text-align: center;
+  width: 254px;
+  background-color: #101010;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.features__right-save {
+  padding: 10px 0;
+  width: 254px;
+  background-color: #101010;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.features__right-save-img {
+  margin-right: 11px;
+}

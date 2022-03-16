@@ -1,0 +1,22 @@
+.main--admin {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+.admin__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 800px;
+  margin-top: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}

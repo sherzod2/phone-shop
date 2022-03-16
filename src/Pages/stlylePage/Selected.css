@@ -1,0 +1,15 @@
+.favorites__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c27;
+  margin-bottom: 22px;
+}
+
+.favorites__sec-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #838383;
+  margin-bottom: 20px;
+}

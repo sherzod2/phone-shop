@@ -1,0 +1,244 @@
+.korzinka {
+  margin: 7px 0 76px;
+}
+
+.korzinka__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c27;
+  margin-bottom: 13px;
+}
+
+.korzinka__body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.korzinka__left {
+  width: 633px;
+}
+
+.korzinka__left-list {
+  width: 100%;
+}
+
+.korzinka__left-item {
+  position: relative;
+  padding: 18px 28px 17px 18px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin-bottom: 13px;
+}
+
+.korzinka__left-item-delete {
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  background-color: #ffffff;
+}
+
+.korzinka__left-item-main {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.korzinka__left-item-pic {
+  margin-right: 23px;
+}
+
+.korzinka__left-item-title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1c1c27;
+  margin-bottom: 12px;
+}
+
+.korzinka__left-item-price {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #aaaaaa;
+}
+
+.korzinka__left-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.korzinka__left-item-plusminus-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.korzinka__left-item-product-count {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  margin: 0 23px;
+}
+
+.korzinka__left-item-minus-btn,
+.korzinka__left-item-plus-btn {
+  background-color: #fff;
+}
+
+.korzinka__left-item-total-price {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #1c1c27;
+}
+
+/* DELIVERY */
+
+.korzinka__delivery {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 15px 19px 23px 22px;
+}
+
+.korzinka__delivery-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 17px;
+}
+
+.korzinka__delivery-map {
+  margin: 0 0 18px 7px;
+}
+
+.korzinka__delivery-iframe {
+  width: 585px;
+  height: 173px;
+  border-radius: 10px;
+  border: none;
+}
+
+.korzinka__delivery-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.korzinka__delivery-kuryer {
+  display: flex;
+  align-items: center;
+}
+
+.korzinka__delivery-kuryer-car {
+  margin-right: 12px;
+}
+
+.korzinka__delivery-kuryer-select {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.korzinka__delivery-price {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #1c1c27;
+}
+
+/* RIGHT */
+
+.korzinka__right {
+  width: 349px;
+}
+
+.korzinka__right-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 21px 16px 70px 21px;
+}
+
+.korzinka__right-title,
+.korzinka__right-price {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.korzinka__right-checkout {
+  position: relative;
+  top: -54px;
+  display: inline-block;
+  background-color: #101010;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 22px 0;
+  text-align: center;
+  width: 349px;
+  width: 100%;
+  /* margin-top: -2000px; */
+  /* text */
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ----------------FOR EMPTY KORZINKA------------- */
+
+.empty-korzinka {
+  padding: 37px 0 36px;
+}
+
+.empty-korzinka__body {
+  text-align: center;
+}
+
+.empty-korzinka__img {
+  margin-bottom: 30px;
+}
+
+.empty-korzinka__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #101010;
+}
+
+.empty-korzinka__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #838383;
+  margin-bottom: 30px;
+}
+
+.empty-korzinka__btn {
+  display: inline-block;
+  background: #101010;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 21px 0;
+  width: 540px;
+  /* text */
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}

@@ -1,0 +1,26 @@
+.terms {
+  padding-top: 19px;
+}
+
+.terms__item {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 15px 31px 30px 29px;
+  margin-bottom: 33px;
+}
+
+.terms__item-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1c1c27;
+  margin-bottom: 15px;
+}
+
+.terms__item-desc {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  margin-left: 15px;
+}

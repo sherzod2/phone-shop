@@ -1,0 +1,17 @@
+.ordered {
+  margin: 19px;
+  text-align: center;
+}
+
+.ordered__text {
+  display: inline-block;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 33px 73px 41px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #1c1c27;
+}

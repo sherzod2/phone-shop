@@ -1,0 +1,74 @@
+.header {
+  border: 1px solid red;
+  padding: 3px 0 7px;
+  margin-bottom: 22px;
+}
+
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 65px;
+}
+
+.header__select-logo {
+  margin-right: 15px;
+}
+
+.header__select-name {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #101010;
+}
+
+.header__select {
+  display: flex;
+  align-items: center;
+}
+
+.header__selected-link {
+  position: relative;
+  text-decoration: none;
+  padding: 20px;
+  margin-right: 5px;
+}
+
+.header__selected-link-span,
+.header__korzinka-link-span {
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ffa542;
+}
+
+.header__selected-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.header__korzinka-link {
+  position: relative;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.header__korzinka-logo {
+  width: 20px;
+  height: 20px;
+}
