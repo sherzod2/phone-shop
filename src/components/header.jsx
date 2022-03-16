@@ -1,4 +1,5 @@
 import "./styles/header.css";
+import { Link } from "react-router-dom";
 import siteLogo from "../assets/images/site-logo.svg";
 import phoneLogo from "../assets/images/phone-log.svg";
 import headerSelectedLogo from "../assets/images/selected-log.svg";
@@ -12,13 +13,15 @@ function Header() {
         <div className="container">
           <div className="header__body">
             <div className="header__left">
-              <img
-                className="header__logo"
-                src={siteLogo}
-                alt="site's logo"
-                width={105}
-                height={50}
-              />
+              <Link to="/">
+                <img
+                  className="header__logo"
+                  src={siteLogo}
+                  alt="site's logo"
+                  width={105}
+                  height={50}
+                />
+              </Link>
               <div className="header__select">
                 <img
                   className="header__select-logo"
@@ -31,7 +34,7 @@ function Header() {
               </div>
             </div>
             <div>
-              <NavLink className="header__selected-link" to="/">
+              <NavLink className="header__selected-link" to="/selected">
                 <span className="header__selected-link-span">2</span>
                 <img
                   className="header__selected-logo"
@@ -41,7 +44,7 @@ function Header() {
                   height={20}
                 />
               </NavLink>
-              <NavLink className="header__korzinka-link" to="/">
+              <NavLink className="header__korzinka-link" to="/card">
                 <span className="header__korzinka-link-span">2</span>
                 <img
                   className="header__korzinka-logo"

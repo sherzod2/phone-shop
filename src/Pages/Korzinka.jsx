@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "./stlylePage/Korzinka.css";
 import { Link } from "react-router-dom";
 import useData from "../Hooks/useData";
@@ -13,27 +13,32 @@ import EmptyKorzinkaImg from "../assets/images/empty-korzinka.png";
 const Korzinka = () => {
   const { data } = useData();
 
+  const [productCount, setProductCount] = useState(0);
+
   const cardData = [];
 
   cardData.push(data[0]);
 
-  const kuryerPrice = 100000;
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  let kuryerPrice = 100000;
 
   const handleMinusClick = function (item) {
-    const findIndexMinus = cardData.findIndex((i) => i.id === item.id);
-    if (findIndexMinus && cardData[findIndexMinus].count > 0) {
-      cardData[findIndexMinus].count--;
+    if (productCount > 0) {
+      cardData[0].count--;
+      setProductCount(cardData[0].count);
+      if (productCount - 1 === 0) {
+        kuryerPrice = 0;
+      } else {
+        kuryerPrice = 100000;
+      }
+      setTotalPrice(cardData[0].price * (productCount - 1) + kuryerPrice);
     }
-    console.log(cardData[findIndexMinus].count);
   };
   const handlePlusClick = function (item) {
     cardData[0].count++;
-    console.log(cardData[0].count);
-    // const findIndexPlus = cardData.findIndex((i) => i.id === item.id);
-    // if (findIndexPlus) {
-    //   cardData[findIndexPlus].count = 12;
-    // }
-    // console.log(cardData[findIndexPlus].count, findIndexPlus);
+    setProductCount(cardData[0].count);
+    setTotalPrice(cardData[0].price * (productCount + 1) + kuryerPrice);
   };
 
   if (0) {
@@ -109,7 +114,7 @@ const Korzinka = () => {
                             />
                           </button>
                           <p className="korzinka__left-item-product-count">
-                            {item?.count}
+                            {productCount}
                           </p>
                           <button
                             onClick={() => handlePlusClick(item)}
@@ -124,7 +129,7 @@ const Korzinka = () => {
                           </button>
                         </div>
                         <p className="korzinka__left-item-total-price">
-                          {`${item?.price * 1} so'm`}
+                          {`${item?.price * productCount} so'm`}
                         </p>
                       </div>
                     </li>
@@ -163,7 +168,7 @@ const Korzinka = () => {
             <div className="korzinka__right">
               <div className="korzinka__right-head">
                 <h4 className="korzinka__right-title">ИТОГО</h4>
-                <p className="korzinka__right-price">{1}</p>
+                <p className="korzinka__right-price">{totalPrice}</p>
               </div>
               <Link className="korzinka__right-checkout" to="/order">
                 Перейти к оформлению
